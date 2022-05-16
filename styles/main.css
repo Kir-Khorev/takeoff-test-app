@@ -1,0 +1,79 @@
+@import url('./contacts.css');
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+
+body {
+    font-family: 'Hubballi', cursive;
+  	background-color: #efefef;
+}
+
+h1, h3, h4, h5, h6 {
+  text-align: center;
+  color: #007caa;
+}
+
+
+section {
+  width: 90%;
+  margin: auto;
+  text-align: left;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.initialPage{
+  margin: auto;
+}
+
+/* Counter */
+
+.counter {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 20vh;
+  width: 50%;
+  margin: auto;
+}
+
+.counter button {
+  margin: 15px auto;
+}
+
+.counter input {
+  height: 3rem;
+  padding: 15px;
+  border-radius: 20px;
+  border: 1px solid lightgoldenrodyellow;
+  font-size: 19px;
+  color: rgb(152, 151, 151);
+  margin: auto;
+  width: 80%;
+}
+
+.counterButtonsBlock {
+  display: flex;
+  flex-direction: column;
+}
+
+.counterButtonsBlock button {
+  margin: 10px auto;
+}
+
+/* Footer */
+
+.footer-distributed {
+  background-color: #33383b;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: normal 16px sans-serif;
+  padding: 35px 40px;
+  margin-top: 50px;
+}
+
+.footer-distributed .footer-left p {
+  color: #8f9296;
+  font-size: 14px;
+  margin: 0;
+}
