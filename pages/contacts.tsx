@@ -19,17 +19,7 @@ interface Props { }
 
 const ContactsPage: NextPage<Props> = ({ contacts: serverContacts }: PostsPageProps) => {
     const [contacts, setContacts] = useState(serverContacts);
-    const { data: session, status } = useSession();
-
-    // Fetch content from protected route
-    useEffect(() => {
-        const fetchData = async () => {
-            const res = await fetch(`${process.env.API_URL}/contacts`)
-            const json = await res.json()
-            setContacts(json)
-            if (!serverContacts) fetchData()
-        }
-    }, [session, serverContacts])
+    const { data: session } = useSession();
 
     // Search filter
     const filterIt = (terms, arr) => {
