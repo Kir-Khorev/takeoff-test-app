@@ -93,6 +93,7 @@ const ContactsPage: NextPage<Props> = ({ contacts: serverContacts }: PostsPagePr
                                 </form>
                             })}
                         </div>
+                        {/* Add contact form */}
                         <form action="submit" className="addForm" onSubmit={(e) => addNewContact(e, setContacts, contacts)}>
                             <input type="text" required placeholder='name' />
                             <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$" placeholder='email' />

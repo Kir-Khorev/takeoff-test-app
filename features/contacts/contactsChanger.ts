@@ -23,7 +23,6 @@ export function addNewContact(e, setState, array) {
     })
 }
 
-
 // Delete and change contact
 export function changeContact(e, setState, array) {
     e.preventDefault();

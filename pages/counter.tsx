@@ -4,7 +4,7 @@ import styles from '../styles/header.module.css';
 import { NextPage } from 'next'
 import { MainLayout } from '../components-layout/MainLayout';
 import { Footer } from '../components-layout/Footer';
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import { useAppDispatch, useAppSelector } from '../redux/hooks';
 import { decrement, increment, incrementByAmount, selectCount, } from '../features/counter/counterSlice';
 
