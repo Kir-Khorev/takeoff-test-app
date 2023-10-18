@@ -19,7 +19,7 @@ export default class MyApp extends App {
                     <meta name="viewport" content="width=device-width, initial-scale=1" />
                 </Head>
                 <Provider store={store}>
-                    <SessionProvider session={pageProps.session} >
+                    <SessionProvider session={pageProps?.session} >
                         <Component {...pageProps} router={router} />
                     </SessionProvider>
                 </Provider>
